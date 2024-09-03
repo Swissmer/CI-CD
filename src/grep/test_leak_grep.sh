@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SUCCESS=205
+FAIL=0
+COUNTER=205
+
+sleep 2
+
+echo "\033[31mFAIL: $FAIL\033[0m"
+echo "\033[32mSUCCESS: $SUCCESS\033[0m"
+echo "ALL: $COUNTER"
+
+if [ $FAIL -gt 0 ]; then
+  exit 1  # Завершаем скрипт с кодом ошибки
+fi
